@@ -1,0 +1,135 @@
+.NavBar {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+
+    .block {
+        display: block;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .navigation_menu {
+        padding: 25px 15px;
+        position: absolute;
+        top: 0px;
+        background-color: #eff1f2;
+        min-width: 400px;
+        height: 100vh;
+
+        .searchBox {
+            margin-top: 20px;
+            background-color: #fff;
+            width: 100%;
+            position: relative;
+            padding: 10px 5px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+                font-size: 1.1rem;
+                color: #7f888f;
+            }
+
+            img {
+                height: 100%;
+                object-fit: cover;
+                cursor: pointer;
+            }
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+            flex-direction: column;
+            padding-block: 25px;
+            line-height: 29px;
+
+            li {
+                padding-block: 10px;
+                color: #7f888f;
+                border-bottom: 2px solid #9fa3a6;
+            }
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            img {
+                height: 1.2rem;
+                object-fit: cover;
+            }
+        }
+
+    }
+
+    .container {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-block: 25px 15px;
+        border-bottom: 5px solid #f56a6a;
+
+
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            img {
+                height: 1.2rem;
+                object-fit: cover;
+            }
+        }
+
+        .createdBy {
+            font-weight: 500;
+            font-size: 1.2rem;
+
+            span {
+                color: #999898;
+            }
+        }
+
+        .socialLink {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            img {
+                height: 1.2rem;
+                object-fit: contain;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .navigation_menu {
+        width: 100vw !important;
+        max-width: 100vw;
+        min-width: unset;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navigation_menu {
+        max-width: 100vw;
+        width: 60vw;
+        overflow-x: hidden;
+    }
+}
