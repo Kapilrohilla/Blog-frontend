@@ -20,7 +20,6 @@ const NavBar = () => {
                     <li><Link onClick={() => setNavOpen(false)} className='link' to="/jobs">JOBS</Link></li>
                     <li><Link onClick={() => setNavOpen(false)} className='link' to="upcoming">UPCOMING</Link></li>
                     <li><Link onClick={() => setNavOpen(false)} className='link' to="news">NEWS</Link></li>
-
                 </ul>
             </nav>
             <div className='container'>
