@@ -3,6 +3,7 @@ import "./Homepage.scss";
 import Header from '../../component/Header/Header';
 import NewsIntro from "../../component/NewsIntro/NewsIntro";
 import Blog from '../../component/Blog/Blog';
+import { Link } from 'react-router-dom';
 
 const newsData = [
     {
@@ -55,7 +56,7 @@ const Homepage = () => {
             <Header />
             {/* latest blog */}
             <div className="blogs">
-                <h2>Latest Blog's</h2>
+                <Link to="/blogs" className='link'><h2>Latest Blog's</h2></Link>
                 {apiData && apiData.map((ele, i) => {
                     if (i >= 5) {
                         return;

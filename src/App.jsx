@@ -9,7 +9,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import Jobs from "./pages/Jobs/Jobs";
 import Upcoming from "./pages/Upcoming/Upcoming";
 import News from "./pages/News/News";
-
+import Blogs from './pages/Blogs/Blogs';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -45,7 +45,15 @@ const router = createBrowserRouter([
       {
         path: "/jobs",
         element: <Jobs />
-      }
+      },
+      {
+        path: "/blogs",
+        element: <Blogs />
+      },
+      // {
+      //   path: "/blogs/:id",
+      //   element: <Blog />
+      // }
     ],
   },
 ]);
