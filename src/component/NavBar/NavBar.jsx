@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./NavBar.scss";
+import { Link } from 'react-router-dom';
 const NavBar = () => {
     const [navOpen, setNavOpen] = useState(false);
     return (
@@ -14,9 +15,9 @@ const NavBar = () => {
                 </div>
                 <h2>Menu</h2>
                 <ul>
-                    <li>HOMEPAGE</li>
-                    <li>JOBS</li>
-                    <li>UPCOMING</li>
+                    <li><Link onClick={() => setNavOpen(false)} className='link' to="/news">NEWS</Link></li>
+                    <li><Link onClick={() => setNavOpen(false)} className='link' to="/jobs">JOBS</Link></li>
+                    <li><Link onClick={() => setNavOpen(false)} className='link' to="upcoming">UPCOMING</Link></li>
                 </ul>
             </nav>
             <div className='container'>

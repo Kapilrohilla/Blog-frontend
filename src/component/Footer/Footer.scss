@@ -1,0 +1,103 @@
+.footer {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+    font-family: 'Roboto Slab', serif;
+
+    padding-block: 40px;
+
+    .top {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 40px;
+        border-bottom: 2px solid #7f888f;
+
+        .col1,
+        .col2 {
+
+            h3 {
+                font-weight: 500;
+                font-size: 1.2rem;
+                font-style: bolder;
+                text-transform: uppercase;
+                padding-block: 10px;
+                border-bottom: 2px solid #7f888f;
+                width: fit-content;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                li {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .aboutus {
+            h3 {
+                font-weight: 500;
+                font-size: 1.2rem;
+                font-style: bolder;
+                text-transform: uppercase;
+                padding-block: 10px;
+                border-bottom: 2px solid #7f888f;
+                width: fit-content;
+                margin-bottom: 20px;
+            }
+
+            .detail {
+                color: #9fa3a6;
+                font-size: 1.1rem;
+                max-width: 500px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+
+            .social {
+                display: flex;
+                width: fit-content;
+                gap: 10px;
+
+                img {
+                    border-radius: 50%;
+                    padding: 5px;
+                    border: 1px solid #7f888f;
+                    height: 40px;
+                    width: 40px;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        padding-block: 40px;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .footer {
+        .top {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: 1fr 1fr;
+
+            .aboutus {
+                grid-column: 1/-1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
