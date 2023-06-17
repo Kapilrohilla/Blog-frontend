@@ -3,6 +3,8 @@
         max-width: 1440px;
         margin: 0 auto;
         padding-block: 40px;
+        border-bottom: 2px solid #7f888f;
+        padding-block: 80px;
 
         h2 {
             font-size: 35px;
@@ -10,12 +12,15 @@
             border-bottom: 5px solid #f56a6a;
             margin-inline: 30px;
             padding: 5px 0px;
+            margin-bottom: 30px;
         }
     }
 
     .newsSection {
         max-width: 1440px;
         margin: 0 auto;
+        border-bottom: 2px solid #7f888f;
+        padding-block: 80px;
 
         h2 {
             font-size: 35px;
@@ -23,11 +28,14 @@
             border-bottom: 5px solid #f56a6a;
             padding: 5px 0px;
             margin-inline: 30px;
+            margin-bottom: 30px;
         }
     }
 
     .newsContainer {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-content: center;
+        gap: 20px;
     }
 }
