@@ -50,6 +50,9 @@ const router = createBrowserRouter([
         path: "/blogs",
         element: <Blogs />
       },
+      {
+        basename: "/"
+      }
       // {
       //   path: "/blogs/:id",
       //   element: <Blog />
