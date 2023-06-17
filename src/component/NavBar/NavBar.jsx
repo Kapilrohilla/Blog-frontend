@@ -15,9 +15,12 @@ const NavBar = () => {
                 </div>
                 <h2>Menu</h2>
                 <ul>
-                    <li><Link onClick={() => setNavOpen(false)} className='link' to="/news">NEWS</Link></li>
+                    <li><Link onClick={() => setNavOpen(false)} className='link' to="/">HOMEPAGE</Link></li>
+                    <li><Link onClick={() => setNavOpen(false)} className='link' to="/blogs">BLOGS</Link></li>
                     <li><Link onClick={() => setNavOpen(false)} className='link' to="/jobs">JOBS</Link></li>
                     <li><Link onClick={() => setNavOpen(false)} className='link' to="upcoming">UPCOMING</Link></li>
+                    <li><Link onClick={() => setNavOpen(false)} className='link' to="news">NEWS</Link></li>
+
                 </ul>
             </nav>
             <div className='container'>

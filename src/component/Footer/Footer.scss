@@ -3,12 +3,12 @@
     font-family: 'Roboto Slab', serif;
 
     padding-block: 40px;
+    width: 1440px;
+    margin: 0 auto;
 
     .top {
         display: flex;
-        justify-content: space-around;
-        padding-bottom: 40px;
-        border-bottom: 2px solid #7f888f;
+        justify-content: space-between;
 
         .col1,
         .col2 {
