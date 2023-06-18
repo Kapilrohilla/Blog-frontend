@@ -139,3 +139,40 @@
     font-size: 2rem;
     margin-block: 50px;
 }
+
+@media screen and (max-width: 1200px) {
+    .blogs {
+        .most_recent_post_section {
+            .most_recents_post {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blogs {
+        .most_recent_post_section {
+            .most_recents_post {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .blogs {
+        .customer_service {
+            .customer_service_blog_container {
+                height: unset;
+                flex-direction: column;
+                align-items: center;
+
+                .customer_service_blog {
+                    max-width: unset;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

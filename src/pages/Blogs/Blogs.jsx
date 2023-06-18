@@ -5,7 +5,7 @@ const Blogs = () => {
         <div className="blogs">
             <section className='most_recent_post_section'>
                 <div className="secNav">
-                    <h2>Customer Service</h2>
+                    <h2>Most Recent Blogs</h2>
                     <div className="right">
                         <span>view more &gt;</span>
                     </div>
